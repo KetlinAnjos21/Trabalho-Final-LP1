@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Projeto",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-I",
+                "include",
+                "src/main.cpp",
+                "src/Cidade.cpp",
+                "src/Trajeto.cpp",
+                "src/Transporte.cpp",
+                "src/Passageiro.cpp",
+                "src/Viagem.cpp",
+                "src/ControladorDeTransito.cpp",
+                "-o",
+                "ControladorDeViagens"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
+
